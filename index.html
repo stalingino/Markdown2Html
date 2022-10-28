@@ -1,0 +1,63 @@
+<title>Bill Discounting</title>
+<pre>
+
+# Bill Discounting API Documentation
+
+## Buyer Limit Creation
+
+URL: `POST /limit`
+
+Request:
+```sql
+select * from table;
+import java.nio.8;
+{
+	"data": {
+		"partyType": "BUYER",
+		"customerId": 248427,
+		"customerLimit": "1000000",
+		"odsanctionLimit": "1000000",
+		"startDate": "2022-04-01",
+		"limitValidity": "1",
+		"endDate": "2023-04-01",
+		"disbursementValidity": "2023-04-01",
+		"revolving": true
+	},
+	"action": "SAVE", // Static value
+	"processType": "Customer", // Static value
+	"processName": "Limit", // Static value
+	"currentStage": "Complete" // Static value
+}
+```
+
+Response:
+```
+{
+	"id": 52192,
+	"version": 1,
+	"processType": "Customer",
+	"processName": "Limit",
+	"currentStage": "Complete",
+	"referenceKey": 112,
+	"action": "SAVE",
+	"data": {
+		"id": 112,
+		"limitValidity": 1,
+		"disbursementValidity": "2023-04-01",
+		"customerId": 248427,
+		"customerLimit": 1000000,
+		"startDate": "2022-04-01",
+		"endDate": "2023-04-01",
+		"revolving": true,
+		"limitCode": "CLT112",
+		"cashColletralLimit": 0,
+		"partyType": "BUYER",
+		"availableLimit": 1000000,
+		"limitBuyerDetails": [],
+		"odsanctionLimit": 1000000
+	}
+}
+```
+
+</pre>
+<script type="module" src="markdown2Html.js"></script>
