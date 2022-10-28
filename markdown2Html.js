@@ -22,7 +22,7 @@ head(`
 css("https://cdn.jsdelivr.net/gh/alum/markdown-css-themes@gh-pages/screen.css")
 css("https://cdn.jsdelivr.net/gh/stalingino/code-prettify@v1.0.2/styles/sunburst.css")
 
-import {showdown} from "https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"
+import showdown from "https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"
 import "https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"
 import "https://cdn.jsdelivr.net/npm/showdown-prettify@1.3.0/dist/showdown-prettify.min.js"
 
