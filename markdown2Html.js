@@ -5234,7 +5234,7 @@ document.body.prepend(elem('logo', {style: 'padding: 100px 10px 50px;display: bl
     alt: 'Dvara Solutions', style: 'filter: brightness(0) invert(1)'
 })]))
 
-let show = new showdown.Converter({extensions: ['prettify']});
+let show = new showdown.Converter({extensions: ['prettify'], tables: true});
 
 let input = document.getElementsByTagName('pre')[0]
 let output = elem('div', {id: 'output', class: 'markdown-body'})
