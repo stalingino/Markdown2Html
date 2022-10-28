@@ -1,9 +1,10 @@
-let head = (fullTag) => document.head.insertAdjacentHTML("beforeend", fullTag)
+let addToHead = (fullTag) => document.head.insertAdjacentHTML("beforeend", fullTag)
+let addToBody = (fullTag) => document.body.insertAdjacentHTML("beforeend", fullTag)
 let css = (src) => document.head.insertAdjacentHTML("beforeend", `<link rel="stylesheet" href="${src}" />`)
-head(`<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">`)
+addToHead(`<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">`)
 css("https://cdn.jsdelivr.net/gh/alum/markdown-css-themes@gh-pages/screen.css")
 css("https://cdn.jsdelivr.net/gh/stalingino/code-prettify@v1.0.2/styles/sunburst.css")
-head(`
+addToBody(`
 <style>
     body {
         background-color: #1a2327;
