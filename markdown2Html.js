@@ -12,6 +12,9 @@ addToBody(`
         padding-top: 50px;
         color: #e0e0e0;
     }
+    pre.prettyprint {
+        width: 100%;
+    }
     li.L0, li.L1, li.L2, li.L3, li.L5, li.L6, li.L7, li.L8 {
         list-style-type: decimal;
     }
