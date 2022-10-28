@@ -1,6 +1,8 @@
 let head = (fullTag) => document.head.insertAdjacentHTML("beforeend", fullTag)
 let css = (src) => document.head.insertAdjacentHTML("beforeend", `<link rel="stylesheet" href="${src}" />`)
 head(`<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">`)
+css("https://cdn.jsdelivr.net/gh/alum/markdown-css-themes@gh-pages/screen.css")
+css("https://cdn.jsdelivr.net/gh/stalingino/code-prettify@v1.0.2/styles/sunburst.css")
 head(`
 <style>
     body {
@@ -19,8 +21,6 @@ head(`
         padding-bottom: 50px;
     }
 </style>`)
-css("https://cdn.jsdelivr.net/gh/alum/markdown-css-themes@gh-pages/screen.css")
-css("https://cdn.jsdelivr.net/gh/stalingino/code-prettify@v1.0.2/styles/sunburst.css")
 
 /*! showdown v 2.1.0 - 21-04-2022 */
 ;/*! showdown v 2.1.0 - 21-04-2022 */
