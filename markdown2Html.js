@@ -35,6 +35,20 @@ addToBody(`
     td, th {
         padding: 3px 10px;
     }
+    @media print {
+        body {
+            color: black;
+        }
+        .logo {
+            filter: none;
+        }
+        li.L0, li.L1, li.L2, li.L3, li.L4, li.L5, li.L6, li.L7, li.L8, li.L9 {
+            list-style-type: none;
+        }
+        ol.linenums {
+            margin-left: -30px;
+        }
+    }
 </style>`)
 
 /*! showdown v 2.1.0 - 21-04-2022 */
@@ -5241,8 +5255,7 @@ let elem = (tag, props, children) => {
     return e
 }
 document.body.prepend(elem('logo', {style: 'padding: 100px 10px 50px;display: block'}, [elem('img', {
-    src: 'https://dvarasolutions.com/wp-content/uploads/2021/08/logo-small.png',
-    alt: 'Dvara Solutions', style: 'filter: brightness(0) invert(1)'
+    alt: '[Company Name]', style: 'filter: brightness(0) invert(1)', className: 'logo'
 })]))
 
 let show = new showdown.Converter({extensions: ['prettify'], tables: true});
