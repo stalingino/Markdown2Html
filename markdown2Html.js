@@ -11,6 +11,8 @@ addToBody(`
         width: 800px;
         padding-top: 50px;
         color: #e0e0e0;
+        font-size: 125%;
+        line-height: normal;
     }
     pre.prettyprint {
         width: 100%;
