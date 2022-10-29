@@ -24,6 +24,15 @@ addToBody(`
     #output {
         padding-bottom: 50px;
     }
+    table {
+        border-spacing: 0;
+    }
+    td {
+        border-top: 1px solid white;
+    }
+    td, th {
+        padding: 3px 10px;
+    }
 </style>`)
 
 /*! showdown v 2.1.0 - 21-04-2022 */
