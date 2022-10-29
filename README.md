@@ -1,5 +1,7 @@
 # Markdown2Html
 
+Create your document in markdown & save as html file
+
 ```
 <pre>
 
