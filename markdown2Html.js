@@ -5254,9 +5254,8 @@ let elem = (tag, props, children) => {
     if (children) for (const c of children) e.appendChild(c)
     return e
 }
-document.body.prepend(elem('logo', {style: 'padding: 100px 10px 50px;display: block'}, [elem('img', {
-    alt: '[Company Name]', style: 'filter: brightness(0) invert(1)', className: 'logo'
-})]))
+var logo = elem('img', {alt: '[Company Name]', style: 'filter: brightness(0) invert(1)', className: 'logo'})
+document.body.prepend(elem('logo', {style: 'padding: 100px 10px 50px;display: block'}, [logo]))
 
 let show = new showdown.Converter({extensions: ['prettify'], tables: true});
 
