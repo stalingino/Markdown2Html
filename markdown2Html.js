@@ -2,18 +2,11 @@ let addToHead = (fullTag) => document.head.insertAdjacentHTML("beforeend", fullT
 let addToBody = (fullTag) => document.body.insertAdjacentHTML("beforeend", fullTag)
 let css = (src) => document.head.insertAdjacentHTML("beforeend", `<link rel="stylesheet" href="${src}" />`)
 addToHead(`<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">`)
-css("https://cdn.jsdelivr.net/gh/alum/markdown-css-themes@gh-pages/screen.css")
-css("https://cdn.jsdelivr.net/gh/stalingino/code-prettify@v1.0.2/styles/sunburst.css")
+// css("https://cdn.jsdelivr.net/gh/alum/markdown-css-themes@gh-pages/screen.css")
+css("https://cdn.jsdelivr.net/npm/markdown-air@0.0.4/css/air.min.css")
+// css("https://cdn.jsdelivr.net/gh/stalingino/code-prettify@v1.0.2/styles/sunburst.css")
 addToBody(`
 <style>
-    body {
-        background-color: #1a2327;
-        width: 800px;
-        padding-top: 50px;
-        color: #e0e0e0;
-        font-size: 125%;
-        line-height: normal;
-    }
     pre.prettyprint {
         width: 100%;
     }
@@ -5254,7 +5247,7 @@ let elem = (tag, props, children) => {
     if (children) for (const c of children) e.appendChild(c)
     return e
 }
-var logo = elem('img', {alt: '[Company Name]', style: 'filter: brightness(0) invert(1)', className: 'logo'})
+var logo = elem('img', {alt: '[Company Name]', style: 'border-radius:unset;width:unset;height:unset;', className: 'logo'})
 document.body.prepend(elem('logo', {style: 'padding: 100px 10px 50px;display: block'}, [logo]))
 
 let show = new showdown.Converter({extensions: ['prettify'], tables: true});
